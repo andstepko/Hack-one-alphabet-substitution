@@ -1,0 +1,29 @@
+file_read = open(DICTIONARY_FILE_NAME, 'r')
+file_write = open("words.txt", 'w')
+
+read_lines = file_read.readlines()
+for cur_line in read_lines:
+    parts = cur_line.split(" ")
+    cur_word = parts[len(parts) - 1]
+    file_write.write(cur_word)
+
+
+
+
+
+LAST_WORD_LEN = len("попреблагорассмотрительствующемуся")
+file_read = open('words.txt', 'r')
+read_lines = file_read.readlines()
+for i in range(1, LAST_WORD_LEN + 1):
+    file_write = open(str(i) + ".txt", 'w')
+
+    for cur_word in read_lines:
+        if len(cur_word) == i + 1:
+            file_write.write(cur_word)
+    file_write.close()
+
+
+
+
+
+
