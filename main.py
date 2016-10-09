@@ -26,6 +26,7 @@ ALPHABET_VARIANTS_LOG_FILE_NAME = 'alphabet_variants.log'
 MESSAGE_VARIANTS_LOG = 'message_variants.log'
 
 SPACE = ' '
+PUNCTUATION_MARKS = [',', '.', '-', '?', '!', ':', ';']
 ALPHABET = RUSSIAN_ALPHABET
 ALPHABET_LEN = len(ALPHABET)
 MAX_REAL_PROBABILITY = max(RUSSIAN_REAL_PROBABILITIES.values())
@@ -35,7 +36,6 @@ LENGTH_WORDS_NUMBER_TUPLES = [(4, 15), (5, 20), (6, 5)]
 # ENCRYPTED_TEXT = "ощлж9шсркс7ркгмь7п- 79килцё-79ш78ц-ё-5эь79шплч лж9л7пч15эь7к95шмшо9зс7г-и57л7йшч-мш77йшч-мэ79-3-щ7л3ш9э7азо5мл7щзош5эь79л7к95шмшо9зс7г-и57ч-ищ.3-ш5о17п75л ь735л7г- кщк17йшч-мэ7бшмшплёк5о17и-и7плщло-5зсь7к7я5л79ш78ёкпк5шщэ9ль75-и7и-и7шцл7бмшёикь7п7л5щк3кш7л57о- лцл7к бшм-5лм-ь7ощ-пкщкоэ7л5щк39лс7плщло-5ло5э.х"
 # ENCRYPTED_TEXT = ".!?йэчщфчэ!?чщ?вщйв-вё!?чэ?гы?ч-йэиа?чщ?павх-спмщёщ? ёэё?фъпёэг?ёщйвё!?в-ъ?вээбцщч-щ?;?.?мгщпщч?;?ч-йэина?чщ?бмнщё?павх-спэгачэе"
 ENCRYPTED_TEXT = "Бтсвбр ел ибвн анжмс, Гвлъ ел бтсвбрн тсбмс Т залсбгалрыим цнвкрлим, Т снвнилим ъл тлълим; Наь влтснс пнвнъ ърбвцби, Л пбъ енй хвутслаьеый ъби; Онакл сли жмрнс вучелд, Ъл злснйемцл клклд! Онакл пнтнекм пбнс Ъл бвншкм ртн гвызнс, Л бвншкм ен пвбтсын, Ртн ткбваупкм збабсын"
-
 
 
 def encrypt(message, new_alphabet):
@@ -78,7 +78,8 @@ def build_new_alphabet(key):
 def build_and_save_variants(cryptogram):
     cryptogram = cryptogram.lower()
     statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
-    cryptogram = fix_cryptogram_spaces(cryptogram, statistical_letter_occurrences)
+    cryptogram = fix_cryptogram_spaces_and_punctuation(cryptogram, statistical_letter_occurrences)
+    statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
     letter_substitution_variants =\
         build_letters_substitution_variants(statistical_letter_occurrences)
 
@@ -90,10 +91,12 @@ def build_and_save_variants(cryptogram):
     print("\n\nFINISH")
 
 
-def fix_cryptogram_spaces(cryptogram, statistical_letter_occurrences):
+def fix_cryptogram_spaces_and_punctuation(cryptogram, statistical_letter_occurrences):
     letters_in_statistics = len(statistical_letter_occurrences)
     most_common_letter = statistical_letter_occurrences[letters_in_statistics - 1][0]
     cryptogram = substitute_with_spaces(cryptogram, most_common_letter)
+    for punctuation_mark in PUNCTUATION_MARKS:
+        cryptogram = cryptogram.replace(punctuation_mark, '')
     return cryptogram
 
 
@@ -277,7 +280,7 @@ def build_words_substitution_variants(all_unreal_words, dictionary_words, letter
         word_variants = (unreal_word, all_possible_matching_real_words)
         words_variants.append(word_variants)
         # log
-        print('unreal word #' + str(words_variants_counter) + ':')
+        print('unreal word #' + str(words_variants_counter) + '/' + str(len(all_unreal_words)) + ':')
         print(word_variants)
         print('real variants==>' + str(len(word_variants[1])))
         words_variants_counter += 1
@@ -425,7 +428,7 @@ def print_hacked_alternatives(cryptogram, alphabet_variants):
 def run_interactive_improvement(cryptogram):
     cryptogram = cryptogram.lower()
     statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
-    cryptogram = fix_cryptogram_spaces(cryptogram, statistical_letter_occurrences)
+    cryptogram = fix_cryptogram_spaces_and_punctuation(cryptogram, statistical_letter_occurrences)
     print("cryptogram length==>" + str(len(cryptogram)))
 
     message_variants = read_message_variants_from_log_file()
@@ -505,4 +508,6 @@ def main(cryptogram):
 
 
 # main(ENCRYPTED_TEXT)
+
 build_and_save_variants(ENCRYPTED_TEXT)
+# run_interactive_improvement(ENCRYPTED_TEXT)
