@@ -1,2 +1,5 @@
 *.zip
 .idea/
+file
+message_variants.log
+alphabet_variants.log

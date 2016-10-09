@@ -5,29 +5,32 @@ ALPHABET = "abcdefghijklmnopqrstuvwxyz ,.-?!:;\"/"
 SPACE = ' '
 LEN = len(ALPHABET)
 
-CRYPTED_TEXT = "пкцхкдогта,-тгфоь-л,!вктоы-шкяо-шз-ы,ёш:о-шоё пштк,,-доцаб-ш!огщот кпш-ош-х-офш-бо-шсцатгш:пнщос-о-б!ь,-тк,гещолаохца,гуёщосцгкыаяотоь-,уко анотозкцкт,еоьобцашёъос-окх-оёбкюзк,гн щопа анояёфваноюгл,:об!яаозкцктк,пьанъо-,осцгкыаяошкскц:о,апяаюзаш:пно;ш-еоюгл,геоьобцашёъоь-,пша,шг,ояктг,об!яо-фк,:оцазщошк об-яккофш-о-,о,коюзаяоёюкото;ш-оякш-обцашао,гь-яанъо,-що,кп -шцно,аопт-еояеб-т:огоётаюк,гкоьопкцхкеогта,-тгфёщоь-,пша,шг,ёояктг,ёоб!я-отозкцкт,ко,кя-ть-опобцаш- ъок ёо,кя-ть-щозаюко,ксцгнш,-об!я-отгзкш:о-ш,-вк,гкобцашаоьозкцкт,къозяноь-,пша,шг,аояктг,аозкцкт,ноб!яао кпш-оюгл,гщош-окпш:оцаз-пшкдщопшцаза,гдщошцёзаиозянопкцхкногта,-тгфаозкцкт,ноб!яащопо-з,-допш-ц-,!що-шз!ыо-шошцёзащопозцёх-до–ос-якл,-косц-шгт-нзгкогпс-цфк,,-пшгщоь-ш-ц-ко-,осцг,г аяопоёз-т-я:пштгк огоп-л,а,гк окх-ос-я:л!ъозяноь-,пша,шг,аояктг,аозкцкт,ноб!яаошк оы-ц-ващофш-о-,аосцкзпшатяняаос-сцг.козяношцёзао,кп- ,к,,-ос-якл,-х-иозянопкцхкногта,-тгфаозкцкт,ноб!яао-п-бк,,-оы-ц-ваошк щофш-оша о -ю,-огоз-яю,-о,гфкх-о,козкяаш:ъоьц- кош-х-щого-ш,-вк,гкопкцхкногта,-тгфаоьо,ац-зёо,кпь-я:ь-оь-ц-бгя-оь-,пша,шг,аъопкцхкдогта,-тгфох-т-цгящофш-о-,ояебгшогол,акшо,ац-зщогофапш-обкпкз-таяопо ёюгьа гщофш-о-,оё кяозкяаш:оы-ц-в-що,косцгшт-цннп:ого,коя- анп:щогоглоьаюз-дошаь-добкпкз!от!т-згяо-б.гкоза,,!котос-я:лёо,ац-заоготоз-ьалашкя:пшт-щофш-ол,аяо;ш-шо,ац-зъошаь-ко-ш,-вк,гкоьо,ац-зёо,ко,цатгя-п:оь-,пша,шг,ёояктг,ёъозяноь-,пша,шг,ао,ац-зоб!яош-я:ь-охяат,!доёфапш,гьото-б.к ошцёзкщогщо,кп -шцно,аотпкоётаюк,гкогоьаьёерш-оьц-т,ёеояеб-т:оьо ёюгьёщотп-па,,ёеог щоьаьо-,опа ох-т-цгящоткц-нш,-щопо -я-ь- обаб!рь-ц гягу!що-,щоьаьоёфапш,гьопо,г ото-б.к озкякщог,-хзаосцгы-згтвгдотот-пыг.к,:ко-шопгя!щоьц-ш-пшгщопсцаткзягт-пшго;шгыояезкдщо-фк,:офапш-щоь-хзаото-б.к озкякошцкб-таягп:озцёхгкоьафкпштащосцгы-згяото-ля-бяк,гко,ао,ац-золаокх-обкпскф,-пш:що,кцнвягт-пш:щос:н,пшт-щоя-ю:ъоь-,пша,шг,ояктг,щокпягобоёо,кх-опсц-пгягщояебгшояго-,о,ац-зщоцквгшкя:,-о,кол,аяоб!щоьаьо,ао;ш-о-шткшгш:ъо-,ояебгяого,кояебгяо,ац-зошаьоюкщоьаьогот--б.кояезкдъоцалё ккшпнщоьаьоз-бц!дофкя-ткьщо-,об-я:вкояебгящофк о,кояебгяояезкдщоаос-ш- ёого,ац-зъо,-ояебгш:огяго,кояебгш:о,ац-зщоьаьофш-рш-о-п-бк,,-кщо-,о,ко -хщос-ш- ёофш-о,кош-я:ь-оюгяопо,ац-з- що,кош-я:ь-отпкокх-ог,шкцкп!об!ягоптнла,!опо,ац-з- що,-о-,опфгшаяогопа -х-опкбнофапш:ео,ац-защо,котгзкяотопкбкого,ац-зко,гьаьгыо"
+# CRYPTED_TEXT = "пкцхкдогта,-тгфоь-л,!вктоы-шкяо-шз-ы,ёш:о-шоё пштк,,-доцаб-ш!огщот кпш-ош-х-офш-бо-шсцатгш:пнщос-о-б!ь,-тк,гещолаохца,гуёщосцгкыаяотоь-,уко анотозкцкт,еоьобцашёъос-окх-оёбкюзк,гн щопа анояёфваноюгл,:об!яаозкцктк,пьанъо-,осцгкыаяошкскц:о,апяаюзаш:пно;ш-еоюгл,геоьобцашёъоь-,пша,шг,ояктг,об!яо-фк,:оцазщошк об-яккофш-о-,о,коюзаяоёюкото;ш-оякш-обцашао,гь-яанъо,-що,кп -шцно,аопт-еояеб-т:огоётаюк,гкоьопкцхкеогта,-тгфёщоь-,пша,шг,ёояктг,ёоб!я-отозкцкт,ко,кя-ть-опобцаш- ъок ёо,кя-ть-щозаюко,ксцгнш,-об!я-отгзкш:о-ш,-вк,гкобцашаоьозкцкт,къозяноь-,пша,шг,аояктг,аозкцкт,ноб!яао кпш-оюгл,гщош-окпш:оцаз-пшкдщопшцаза,гдщошцёзаиозянопкцхкногта,-тгфаозкцкт,ноб!яащопо-з,-допш-ц-,!що-шз!ыо-шошцёзащопозцёх-до–ос-якл,-косц-шгт-нзгкогпс-цфк,,-пшгщоь-ш-ц-ко-,осцг,г аяопоёз-т-я:пштгк огоп-л,а,гк окх-ос-я:л!ъозяноь-,пша,шг,аояктг,аозкцкт,ноб!яаошк оы-ц-ващофш-о-,аосцкзпшатяняаос-сцг.козяношцёзао,кп- ,к,,-ос-якл,-х-иозянопкцхкногта,-тгфаозкцкт,ноб!яао-п-бк,,-оы-ц-ваошк щофш-оша о -ю,-огоз-яю,-о,гфкх-о,козкяаш:ъоьц- кош-х-щого-ш,-вк,гкопкцхкногта,-тгфаоьо,ац-зёо,кпь-я:ь-оь-ц-бгя-оь-,пша,шг,аъопкцхкдогта,-тгфох-т-цгящофш-о-,ояебгшогол,акшо,ац-зщогофапш-обкпкз-таяопо ёюгьа гщофш-о-,оё кяозкяаш:оы-ц-в-що,косцгшт-цннп:ого,коя- анп:щогоглоьаюз-дошаь-добкпкз!от!т-згяо-б.гкоза,,!котос-я:лёо,ац-заоготоз-ьалашкя:пшт-щофш-ол,аяо;ш-шо,ац-зъошаь-ко-ш,-вк,гкоьо,ац-зёо,ко,цатгя-п:оь-,пша,шг,ёояктг,ёъозяноь-,пша,шг,ао,ац-зоб!яош-я:ь-охяат,!доёфапш,гьото-б.к ошцёзкщогщо,кп -шцно,аотпкоётаюк,гкогоьаьёерш-оьц-т,ёеояеб-т:оьо ёюгьёщотп-па,,ёеог щоьаьо-,опа ох-т-цгящоткц-нш,-щопо -я-ь- обаб!рь-ц гягу!що-,щоьаьоёфапш,гьопо,г ото-б.к озкякщог,-хзаосцгы-згтвгдотот-пыг.к,:ко-шопгя!щоьц-ш-пшгщопсцаткзягт-пшго;шгыояезкдщо-фк,:офапш-щоь-хзаото-б.к озкякошцкб-таягп:озцёхгкоьафкпштащосцгы-згяото-ля-бяк,гко,ао,ац-золаокх-обкпскф,-пш:що,кцнвягт-пш:щос:н,пшт-щоя-ю:ъоь-,пша,шг,ояктг,щокпягобоёо,кх-опсц-пгягщояебгшояго-,о,ац-зщоцквгшкя:,-о,кол,аяоб!щоьаьо,ао;ш-о-шткшгш:ъо-,ояебгяого,кояебгяо,ац-зошаьоюкщоьаьогот--б.кояезкдъоцалё ккшпнщоьаьоз-бц!дофкя-ткьщо-,об-я:вкояебгящофк о,кояебгяояезкдщоаос-ш- ёого,ац-зъо,-ояебгш:огяго,кояебгш:о,ац-зщоьаьофш-рш-о-п-бк,,-кщо-,о,ко -хщос-ш- ёофш-о,кош-я:ь-оюгяопо,ац-з- що,кош-я:ь-отпкокх-ог,шкцкп!об!ягоптнла,!опо,ац-з- що,-о-,опфгшаяогопа -х-опкбнофапш:ео,ац-защо,котгзкяотопкбкого,ац-зко,гьаьгыо"
+ENCRYPTED_TEXT = "Бтсвбр ел ибвн анжмс, Гвлъ ел бтсвбрн тсбмс Т залсбгалрыим цнвкрлим, Т снвнилим ъл тлълим; Наь влтснс пнвнъ ърбвцби, Л пбъ енй хвутслаьеый ъби; Онакл сли жмрнс вучелд, Ъл злснйемцл клклд! Онакл пнтнекм пбнс Ъл бвншкм ртн гвызнс, Л бвншкм ен пвбтсын, Ртн ткбваупкм збабсын"
 
 CRYPTOGRAM = "ощлж9шсркс7ркгмь7п- 79килцё-79ш78ц-ё-5эь79шплч лж9л7пч15эь7к95шмшо9зс7г-и57л7йшч-мш77йшч-мэ79-3-щ7л3ш9э7азо5мл7щзош5эь79л7к95шмшо9зс7г-и57ч-ищ.3-ш5о17п75л ь735л7г- кщк17йшч-мэ7бшмшплёк5о17и-и7плщло-5зсь7к7я5л79ш78ёкпк5шщэ9ль75-и7и-и7шцл7бмшёикь7п7л5щк3кш7л57о- лцл7к бшм-5лм-ь7ощ-пкщкоэ7л5щк39лс7плщло-5ло5э.х"
 MY_CRYPTOGRAM = ".!?йэчщфчэ!?чщ?вщйв-вё!?чэ?гы?ч-йэиа?чщ?павх-спмщёщ? ёэё?фъпёэг?ёщйвё!?в-ъ?вээбцщч-щ?;?.?мгщпщч?;?ч-йэина?чщ?бмнщё?павх-спэгачэе"
-# REAL_PROBABILITIES = {'о': 0.10983, 'е': 0.08483, 'а': 0.07998, 'и': 0.07367, 'н': 0.06700,
-#                       'т': 0.06318, 'с': 0.05473, 'р': 0.04746, 'в': 0.04533, 'л': 0.04343,
-#                       'к': 0.03486, 'м': 0.03203, 'д': 0.02977, 'п': 0.02804, 'у': 0.02615,
-#                       'я': 0.02001, 'ы': 0.01898, 'ь': 0.01735, 'г': 0.01687, 'з': 0.01641,
-#                       'б': 0.01592, 'ч': 0.01450, 'й': 0.01208, 'х': 0.00966, 'ж': 0.00940,
-#                       'ш': 0.00718, 'ю': 0.00639, 'ц': 0.00486, 'щ': 0.00361, 'э': 0.00331,
-#                       'ф': 0.00267, 'ъ': 0.00037, 'ё': 0.00013}
+REAL_PROBABILITIES = {'о': 0.10983, 'е': 0.08483, 'а': 0.07998, 'и': 0.07367, 'н': 0.06700,
+                      'т': 0.06318, 'с': 0.05473, 'р': 0.04746, 'в': 0.04533, 'л': 0.04343,
+                      'к': 0.03486, 'м': 0.03203, 'д': 0.02977, 'п': 0.02804, 'у': 0.02615,
+                      'я': 0.02001, 'ы': 0.01898, 'ь': 0.01735, 'г': 0.01687, 'з': 0.01641,
+                      'б': 0.01592, 'ч': 0.01450, 'й': 0.01208, 'х': 0.00966, 'ж': 0.00940,
+                      'ш': 0.00718, 'ю': 0.00639, 'ц': 0.00486, 'щ': 0.00361, 'э': 0.00331,
+                      'ф': 0.00267, 'ъ': 0.00037, 'ё': 0.00013}
 # ',': , '.': , '-': , '?': , '!': , ':': , ';': }
 
-REAL_PROBABILITIES = {'a': 0.0796, 'b': 0.0160, 'c': 0.0284, 'd': 0.0401, 'e': 0.1286,
-                      'f': 0.0262, 'g': 0.0199, 'h': 0.0539, 'i': 0.0777, 'j': 0.0016,
-                      'k': 0.0041, 'l': 0.0351, 'm': 0.0243, 'n': 0.0751, 'o': 0.0662,
-                      'p': 0.0181, 'q': 0.0017, 'r': 0.0683, 's': 0.0662, 't': 0.0972,
-                      'u': 0.0248, 'v': 0.0115, 'w': 0.0180, 'x': 0.0017, 'y': 0.0152,
-                      'z': 0.0005}
+# REAL_PROBABILITIES = {'a': 0.0796, 'b': 0.0160, 'c': 0.0284, 'd': 0.0401, 'e': 0.1286,
+#                       'f': 0.0262, 'g': 0.0199, 'h': 0.0539, 'i': 0.0777, 'j': 0.0016,
+#                       'k': 0.0041, 'l': 0.0351, 'm': 0.0243, 'n': 0.0751, 'o': 0.0662,
+#                       'p': 0.0181, 'q': 0.0017, 'r': 0.0683, 's': 0.0662, 't': 0.0972,
+#                       'u': 0.0248, 'v': 0.0115, 'w': 0.0180, 'x': 0.0017, 'y': 0.0152,
+#                       'z': 0.0005}
 
 MAX_REAL_PROBABILITY = max(REAL_PROBABILITIES.values())
 
 DICTIONARY_FILE_NAME = "litw-win_utf.txt"
+ALPHABET_VARIANTS_LOG_FILE_NAME = 'alphabet_variants.log'
+MESSAGE_VARIANTS_LOG = 'message_variants.log'
 
 
 def encrypt(message, new_alphabet):
@@ -66,119 +69,134 @@ def build_new_alphabet(key):
     return new_alphabet
 
 
-# region HACK
-def hack(cryptogram):
+# region BUILD AND SAVE VARIANTS
+def build_and_save_variants(cryptogram):
     cryptogram = cryptogram.lower()
+    statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
+    cryptogram = fix_cryptogram_spaces(cryptogram, statistical_letter_occurrences)
+    letter_substitution_variants =\
+        build_letters_substitution_variants(statistical_letter_occurrences)
 
-    cryptogram_letter_probabilities = build_probabilities_list(cryptogram)
+    words_variants = build_words_variants(cryptogram, letter_substitution_variants,
+                                          [(4, 15), (5, 20)])
 
-    cryptogram = exchange_with_spaces(cryptogram,
-                                      cryptogram_letter_probabilities[len(cryptogram_letter_probabilities) - 1][0])
-    cryptogram_letter_probabilities = build_probabilities_list(cryptogram)
-
-    letter_variants_dict = build_letter_variants(cryptogram_letter_probabilities)
-    # for cur_letter in letter_variants_dict:
-    #     print(cur_letter + " ==>" + str(letter_variants_dict[cur_letter]))
-
-    dict_words_len_4 = 4
-    all_unreal_words_4 = find_all_unreal_words(cryptogram, dict_words_len_4)
-    # too many
-    all_unreal_words_4 = all_unreal_words_4[:10]
-    dictionary_words_4 = load_words_particular_length_from_file(dict_words_len_4)
-
-    dict_words_len_5 = 5
-    all_unreal_words_5 = find_all_unreal_words(cryptogram, dict_words_len_5)
-    # # too many
-    all_unreal_words_5 = all_unreal_words_5[:10]
-    dictionary_words_5 = load_words_particular_length_from_file(dict_words_len_5)
-
-    words_variants_4 = build_words_variants(all_unreal_words_4, dictionary_words_4, letter_variants_dict)
-    words_variants_5 = build_words_variants(all_unreal_words_5, dictionary_words_5, letter_variants_dict)
-
-    alphabet_variants = build_alphabet_variants(words_variants_4 + words_variants_5)
-
+    alphabet_variants = build_alphabet_variants(words_variants)
     print_hacked_alternatives(cryptogram, alphabet_variants)
     print("\n\nFINISH")
 
 
-def build_probabilities_list(cryptogram):
+def fix_cryptogram_spaces(cryptogram, statistical_letter_occurrences):
+    letters_in_statistics = len(statistical_letter_occurrences)
+    most_common_letter = statistical_letter_occurrences[letters_in_statistics - 1][0]
+    cryptogram = substitute_with_spaces(cryptogram, most_common_letter)
+    return cryptogram
+
+
+def build_words_variants(cryptogram, letter_substitution_variants, length_words_number_tuples):
+    result_words_variants = []
+    for length_words_number_tuple in length_words_number_tuples:
+        cur_words_variants = build_words_variants_particular_length(cryptogram,
+                                                                    letter_substitution_variants,
+                                                                    length_words_number_tuple[0],
+                                                                    length_words_number_tuple[1])
+        result_words_variants += cur_words_variants
+    return result_words_variants
+
+
+def build_words_variants_particular_length(cryptogram, letter_substitution_variants,
+                                           letters_in_word, words_to_return):
+    all_unreal_words = obtain_words_by_length(cryptogram, letters_in_word)
+    # too many
+    unreal_words = all_unreal_words[:words_to_return]
+    real_words = load_real_words_by_length(letters_in_word)
+    return build_words_substitution_variants(unreal_words, real_words, letter_substitution_variants)
+
+
+def build_letter_occurrence_statistics(cryptogram):
     cryptogram_len = len(cryptogram)
-    letters_count = {}
-    for letter in cryptogram:
-        cur_counter = letters_count.get(letter, 0)
-        letters_count[letter] = cur_counter + 1
+    met_letters_counters = count_letters_occurrences(cryptogram)
 
-    letter_probabilities = {}
-    for cur_letter in letters_count:
-        cur_letter_count = letters_count.get(cur_letter, 0)
-        cur_letter_probability = cur_letter_count / cryptogram_len
-        letter_probabilities[cur_letter] = cur_letter_probability
+    letter_occurrence_statistics = {}
+    for cur_letter in met_letters_counters:
+        cur_letter_counter = met_letters_counters.get(cur_letter, 0)
+        cur_letter_occurrence = cur_letter_counter / cryptogram_len
+        letter_occurrence_statistics[cur_letter] = cur_letter_occurrence
 
-    letter_probabilities = sort_by_values(letter_probabilities)
-    return letter_probabilities
+    letter_occurrence_statistics = sort_occurrence_statistics_by_values(letter_occurrence_statistics)
+    return letter_occurrence_statistics
 
 
-def exchange_with_spaces(cryptogram, letter_to_exchange):
+def count_letters_occurrences(text):
+    met_letters_counter = {}
+    for letter in text:
+        cur_letter_counter = met_letters_counter.get(letter, 0)
+        met_letters_counter[letter] = cur_letter_counter + 1
+    return met_letters_counter
+
+
+def substitute_with_spaces(message, letter_to_substitute):
     space = SPACE
     result_text = ""
 
-    for letter in cryptogram:
-        if letter == letter_to_exchange:
+    for letter in message:
+        if letter == letter_to_substitute:
             result_text += space
         elif letter == space:
-            result_text += letter_to_exchange
+            result_text += letter_to_substitute
         else:
             result_text += letter
 
     return result_text
 
 
-def build_letter_variants(probability_list):
+def build_letters_substitution_variants(letters_probabilities):
     real_probabilities = REAL_PROBABILITIES
 
     letter_variants_list = []
-    for cur_tuple in probability_list:
+    for cur_tuple in letters_probabilities:
         cur_letter = cur_tuple[0]
         cur_probability = cur_tuple[1]
+
         percentage_window = ((cur_probability * 100) ** (1/2)) / 100
-        cur_min_probability = max(0, cur_probability - percentage_window)
-        cur_max_probability = min(cur_probability + percentage_window, MAX_REAL_PROBABILITY)
+        min_probability = max(0, cur_probability - percentage_window)
+        max_probability = min(cur_probability + percentage_window, MAX_REAL_PROBABILITY)
         available_letters = [letter for letter in real_probabilities
-                             if cur_min_probability <= real_probabilities[letter] <= cur_max_probability]
+                             if min_probability <= real_probabilities[letter] <= max_probability]
         letter_variants_list.append((cur_letter, available_letters))
     return dict(letter_variants_list)
 
 
-def sort_by_values(dictionary):
+def sort_occurrence_statistics_by_values(dictionary):
     return sorted(dictionary.items(), key=operator.itemgetter(1))
 
 
-def find_all_unreal_words(cryptogram, dict_words_len):
+def obtain_words_by_length(cryptogram, words_len):
     all_words = cryptogram.split(SPACE)
     result_words = []
 
     for cur_word in all_words:
         cur_word_len = len(cur_word)
-        if cur_word_len == dict_words_len: # or cur_word_len == dict_words_len + 1:
+        if cur_word_len == words_len:
             result_words.append(cur_word)
 
     return list(set(result_words))
 
 
+# TODO Refactor me.
 def generate_all_letter_conversion_dictionaries(unreal_word, letter_variants):
-    unique_letters = list(set(unreal_word))
-    unique_letters_number = len(unique_letters)
+    unique_word_letters = list(set(unreal_word))
+    unique_word_letters_number = len(unique_word_letters)
 
     variants_number = []
-    for i in range(0, unique_letters_number):
-        cur_letter = unique_letters[i]
+    for i in range(0, unique_word_letters_number):
+        cur_letter = unique_word_letters[i]
         cur_letter_variants = letter_variants[cur_letter]
         variants_number.append(len(cur_letter_variants))
 
     # generate all indexes combinations
     cur_digit_combinations = []
     cur_digit_combinations.append([])
-    for i in range(0, unique_letters_number):
+    for i in range(0, unique_word_letters_number):
         new_cur_digit_combinations = []
         for j in range(0, variants_number[i]):
             for cur_digit_combination in cur_digit_combinations:
@@ -192,9 +210,9 @@ def generate_all_letter_conversion_dictionaries(unreal_word, letter_variants):
     for cur_indexes_combination in all_indexes_combinations:
         # generate one conversion dictionary
         cur_conversion_dict = {}
-        for i in range(0, unique_letters_number):
+        for i in range(0, unique_word_letters_number):
             cur_letter_cur_index = cur_indexes_combination[i]
-            cur_unique_letter = unique_letters[i]
+            cur_unique_letter = unique_word_letters[i]
             unreal_letter_variants = letter_variants[cur_unique_letter]
             cur_conversion_dict[cur_unique_letter] = unreal_letter_variants[cur_letter_cur_index]
         # validate and append generated dictionary
@@ -206,31 +224,8 @@ def generate_all_letter_conversion_dictionaries(unreal_word, letter_variants):
     return letter_conversion_dictionaries
 
 
-def generate_all_possible_words(unreal_word, all_letter_conversion_dictionaries):
-    all_possible_words = []
-    for conversion_dict in all_letter_conversion_dictionaries:
-        possible_word = ''
-        for unreal_letter in unreal_word:
-            possible_word += conversion_dict[unreal_letter]
-        all_possible_words.append(possible_word)
-
-    return all_possible_words
-
-
-def which_real_word_matches(unreal_words, real_words):
-    real_words_matching = []
-
-    for real_word in real_words:
-        for unreal_word in unreal_words:
-            if unreal_word == real_word:
-                real_words_matching.append(real_word)
-                # print(real_word)
-
-    return real_words_matching
-
-
 # region files
-def load_words_particular_length_from_file(words_len):
+def load_real_words_by_length(words_len):
     file_name = str(words_len) + '.txt'
     return load_words_from_file(file_name)
 
@@ -245,43 +240,69 @@ def load_words_from_file(file_name):
     return read_words
 
 
-def print_text_to_file(file_name, text):
+def overwrite_file(file_name, text):
     file = open(file_name, 'w')
     file.write(text)
     file.close()
+
+
+def read_entire_file(file_name):
+    f = open(file_name, 'r')
+    file_content = f.read()
+    f.close()
+    return file_content
 # endregion files
 
 
-def build_words_variants(all_unreal_words, dictionary_words, letter_variants_dict):
+# region Build words substitution variants
+def build_words_substitution_variants(all_unreal_words, dictionary_words, letter_variants_dict):
     print("build_words_variants().unreal_words len==>" + str(len(all_unreal_words)))
     words_variants = []
-    counter = 0
+    words_variants_counter = 0
     for unreal_word in all_unreal_words:
         all_letter_conversion_dictionaries \
             = generate_all_letter_conversion_dictionaries(unreal_word, letter_variants_dict)
+
         all_possible_words = generate_all_possible_words(unreal_word, all_letter_conversion_dictionaries)
+        all_possible_matching_real_words = filter_real_words(all_possible_words, dictionary_words)
 
-        real_word_matching = which_real_word_matches(all_possible_words, dictionary_words)
-
-        adding_tuple = (unreal_word, real_word_matching)
-        words_variants.append(adding_tuple)
-        print(str(counter) + ')')
-        counter += 1
-        print(adding_tuple)
-        print(len(adding_tuple[1]))
+        word_variants = (unreal_word, all_possible_matching_real_words)
+        words_variants.append(word_variants)
+        # log
+        print(str(words_variants_counter) + ')')
+        print(word_variants)
+        print(len(word_variants[1]))
+        words_variants_counter += 1
 
     return words_variants
 
-    # words_variants = []
-    # words_variants.append(('ш-х-', ['того', 'тебе', 'себе', 'кого', 'раза', 'ваша', 'наша', 'небе', 'саша', 'реже', 'нача', 'даша', 'раба', 'дача', 'маша', 'риги', 'собо', 'вече', 'тиши', 'каша', 'неге', 'таща', 'каза', 'ребе', 'нече', 'сажа', 'маха', 'наза', 'ного', 'рого', 'дичи', 'дохо', 'тихи', 'визи', 'каба', 'лебе', 'мага', 'миши', 'рече', 'тобо', 'ваза', 'кача', 'нищи', 'реше', 'теще', 'виши', 'возо', 'деше', 'лаза', 'лиши', 'мехе', 'мого', 'рафа', 'рихи', 'розо', 'саха', 'таба', 'тече', 'веге', 'каца', 'лиги', 'лизи', 'лобо', 'мебе', 'меге', 'мифи', 'ниги', 'ничи', 'ниши', 'ножо', 'резе', 'робо', 'сече', 'таза']))
-    # words_variants.append(('фш-б', ['чтоб', 'этом', 'этой', 'этих', 'этим', 'глаз', 'чрез', 'зная', 'этак', 'грех', 'юлия', 'хлеб', 'знак', 'гроб', 'близ', 'бред', 'злой', 'знай', 'брак', 'фрак', 'гром', 'злая', 'этаж', 'экой', 'благ', 'экая', 'штаб', 'эдак', 'храм', 'змея', 'этог', 'юрий', 'змей', 'фраз', 'хлоп', 'град', 'грек', 'злом', 'знач', 'зноя', 'юной', 'чтой', 'брем', 'грез', 'зной', 'швам', 'блед', 'ждем', 'храп', 'ядом', 'гроз', 'злоб', 'змий', 'блик', 'звой', 'хром', 'шкап', 'эдип', 'грач', 'греб', 'хлам', 'хрип', 'швей', 'шлем', 'шрам', 'эдем', 'юная', 'ямой', 'гриб', 'фрау', 'фрид', 'хлиб', 'ямах', 'блаж', 'ближ', 'блох', 'гной', 'греч', 'грея', 'злоп', 'зрим', 'флаг', 'флам', 'швах', 'швед', 'швея', 'этап', 'юлий', 'юрой', 'яком', 'блаз', 'блок', 'браг', 'брам', 'брач', 'брех', 'бром', 'гвоз', 'глох', 'гном', 'граб', 'граж', 'грам', 'грем', 'грим', 'злак', 'злей', 'злод', 'хлад', 'хлой', 'храб', 'хрия', 'цвей', 'чмок', 'чтим', 'шмак', 'экип', 'юрия', 'явим', 'явок', 'ядим', 'який', 'якоб', 'якой', 'ялик', 'ярем', 'ярок', 'яток']))
-    # words_variants.append(('б!яа', ['была', 'были', 'пяти', 'ушла', 'уйти', 'угла', 'пыли', 'ушли', 'дыма', 'мысл', 'мыла', 'быва', 'быка', 'бэла', 'бюст', 'быта', 'уйди', 'мяса', 'ушки', 'пятн', 'быки', 'угли', 'язва', 'жгут', 'мэра', 'быст', 'быти', 'дыра', 'мыли', 'мыса', 'пята', 'узла', 'жгла', 'жгли', 'мгла', 'бяда', 'ужли', 'узки', 'учка', 'жгун', 'мяла', 'мяли', 'мясн', 'пшла', 'пырс', 'пяди', 'убла', 'убра', 'узда', 'учла', 'ушми', 'уюта']))
-    # words_variants.append((';ш-е', ['этой', 'этих', 'этою', 'этаж', 'экой', 'этог', 'юрий', 'фраз', 'юной', 'флаг', 'юлий', 'юрой', 'цвей', 'юнош']))
-    # words_variants.append(('цазщ', ['друг', 'двух', 'силы', 'виду', 'дамы', 'видя', 'саду', 'разу', 'сидя', 'силу', 'стыд', 'стук', 'слух', 'днях', 'круг', 'вряд', 'миру', 'рады', 'всяк', 'лизу', 'дачу', 'кабы', 'дабы', 'дням', 'двум', 'даму', 'даль', 'пруд', 'лизы', 'княз', 'пару', 'варя', 'парк', 'случ', 'малу', 'слуг', 'лапы', 'самы', 'марк', 'вазы', 'дичь', 'крым', 'разд', 'сады', 'пары', 'разг', 'прям', 'виды', 'визг', 'милы', 'клуб', 'пику', 'рамы', 'служ', 'разб', 'улыб', 'паук', 'раму', 'услы', 'дары', 'валу', 'маль', 'паду', 'скуп', 'даву', 'друж', 'кары', 'паль', 'разы', 'силь', 'скуч', 'вазу', 'круп', 'ладу', 'рабы', 'малы', 'палк', 'рагу', 'давя', 'карм', 'лапу', 'липы', 'миль', 'плуг', 'прыг', 'скры', 'сруб', 'друз', 'кипя', 'лады', 'ламп', 'липу', 'пиру', 'разм', 'ригу', 'связ', 'сичь', 'слых', 'ярый', 'вспы', 'карп', 'карь', 'круж', 'лиду', 'раду', 'ризу', 'ризы', 'саму', 'валы', 'внук', 'киль', 'кляч', 'маку', 'памя', 'пиль', 'стру', 'явку', 'вапы', 'вслу', 'диву', 'капу', 'кипу', 'лары', 'ларь', 'лиды', 'лиры', 'маяк', 'милу', 'миры', 'пауз', 'пилу', 'пиры', 'рабу', 'ступ', 'стуч', 'увяз', 'вакх', 'валь', 'валя', 'вару', 'варь', 'визу', 'вилы', 'виль', 'виля', 'вспя', 'даля', 'дару', 'дарь', 'друк', 'дрых', 'каву', 'кадь', 'кард', 'кару', 'кипы', 'кляу', 'княж', 'кряж', 'лавк', 'лавы', 'ламы', 'лапк', 'ларя', 'ливм', 'лику', 'лиму', 'лимы', 'лиру', 'лруг', 'мазь', 'марь', 'паву', 'павы', 'падь', 'пазы', 'паля', 'пачк', 'паях', 'пидж', 'пряч', 'разя', 'риму', 'свык', 'сизы', 'сияй', 'скря', 'скуд', 'сряд', 'ству', 'стры', 'стря', 'стуж', 'уряд', 'ятку']))
-    # return words_variants
+
+def generate_all_possible_words(unreal_word, all_letter_conversion_dictionaries):
+    all_possible_words = []
+    for conversion_dict in all_letter_conversion_dictionaries:
+        possible_word = ''
+        for unreal_letter in unreal_word:
+            possible_word += conversion_dict[unreal_letter]
+        all_possible_words.append(possible_word)
+
+    return all_possible_words
+
+
+def filter_real_words(unreal_words, real_words):
+    result_words = []
+
+    for unreal_word in unreal_words:
+        for real_word in real_words:
+            if unreal_word == real_word:
+                result_words.append(unreal_word)
+                break
+
+    return result_words
+# endregion Build words substitution variants
 
 
 # region build_alphabet_variants
+# TODO Refactor me.
 def build_alphabet_variants(words_variants):
     sorted_words_variants = []
     print('\nsorted_words_variants==>')
@@ -360,7 +381,7 @@ def merge_branches(branch_1, branch_2):
 def print_hacked_alternatives(cryptogram, alphabet_variants):
     alphabet_variants_len = len(alphabet_variants)
     print("print_hacked_alternatives().alphabet_variants len==>" + str(alphabet_variants_len) + "\n")
-    print_text_to_file('alphabet_variants.log', str(alphabet_variants))
+    overwrite_file(ALPHABET_VARIANTS_LOG_FILE_NAME, str(alphabet_variants))
     counter = 0
     for alphabet_variant in alphabet_variants:
         # print(alphabet_variant)
@@ -376,58 +397,91 @@ def print_hacked_alternatives(cryptogram, alphabet_variants):
                 hacked_text += SPACE
         print('(' + str(counter) + '/' + str(alphabet_variants_len) + ')' + hacked_text)
         counter += 1
+# endregion BUILD AND SAVE VARIANTS
 
 
-# region interactive
+# region interactive improvement
 def run_interactive_improvement(cryptogram):
     cryptogram = cryptogram.lower()
-    cryptogram_letter_probabilities = build_probabilities_list(cryptogram)
-    cryptogram = exchange_with_spaces(cryptogram,
-                                      cryptogram_letter_probabilities[len(cryptogram_letter_probabilities) - 1][0])
-    print("cryptogram==>" + str(len(cryptogram)))
+    statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
+    cryptogram = fix_cryptogram_spaces(cryptogram, statistical_letter_occurrences)
+    print("cryptogram length==>" + str(len(cryptogram)))
 
-    f = open('file', 'r')
-    file_text = f.read()
-    f.close()
-    alternatives_strings = file_text.split('\n')
-    alternatives_strings = alternatives_strings[:len(alternatives_strings) - 1]
-    print("read lines==>" + str(len(alternatives_strings)))
+    message_variants = read_message_variants_from_log_file()
+    letters_substitution_variants = build_possible_letters_substitution_dictionaries(
+        cryptogram, message_variants)
+    print_hacked_alternatives(cryptogram, letters_substitution_variants)
 
-    alt_dictionaries = []
-    for i in range(len(alternatives_strings)):
-        alternative = alternatives_strings[i]
-        alternative = alternative[alternative.index(')') + 1: len(alternative) - 1]
-        alt_dict = {}
-        for j in range(len(alternative)):
-            initial_letter = cryptogram[j]
-            alt_letter = alternative[j]
-            alt_dict[initial_letter] = alt_letter
-        alt_dictionaries.append(alt_dict)
-
-    print_hacked_alternatives(cryptogram, alt_dictionaries)
     while 1:
-        limit = input()
-        parameters = limit.split(' ')
-        position = int(parameters[0])
-        letter = parameters[1]
+        do_interactive_improvement_iteration(cryptogram, letters_substitution_variants)
 
-        new_alt_dictionaries = []
-        for alt_dict in alt_dictionaries:
-            try:
-                if alt_dict[cryptogram[position]] == letter:
-                    new_alt_dictionaries.append(alt_dict)
-            except KeyError:
-                pass
 
-        if len(new_alt_dictionaries) == 0:
-            for alt_dict in alt_dictionaries:
-                alt_dict[cryptogram[position]] = letter
-        else:
-            alt_dictionaries = new_alt_dictionaries
+def do_interactive_improvement_iteration(cryptogram, letters_substitution_variants):
+    position, user_letter = read_user_position_and_letter()
+    cryptogram_letter = cryptogram[position]
 
-        print_hacked_alternatives(cryptogram, alt_dictionaries)
-# endregion interactive
-# endregion HACK
+    new_letters_substitution_variants = substitute_initial_letter_with_user_letter(
+        letters_substitution_variants, cryptogram_letter, user_letter)
 
-# hack(CRYPTED_TEXT)
-run_interactive_improvement(CRYPTED_TEXT)
+    if len(new_letters_substitution_variants) == 0:
+        for letters_substitution_variant in letters_substitution_variants:
+            letters_substitution_variant[cryptogram_letter] = user_letter
+    else:
+        letters_substitution_variants = new_letters_substitution_variants
+
+    print_hacked_alternatives(cryptogram, letters_substitution_variants)
+
+
+def substitute_initial_letter_with_user_letter(letters_substitution_variants,
+                                               cryptogram_letter,
+                                               user_letter):
+    new_letters_substitution_variants = []
+    for letters_substitution_variant in letters_substitution_variants:
+        try:
+            if letters_substitution_variant[cryptogram_letter] == user_letter:
+                new_letters_substitution_variants.append(letters_substitution_variant)
+        except KeyError:
+            pass
+    return new_letters_substitution_variants
+
+
+def read_user_position_and_letter():
+    user_input = input()
+    parameters = user_input.split(' ')
+    position = int(parameters[0])
+    letter = parameters[1]
+    return position, letter
+
+
+def read_message_variants_from_log_file():
+    message_variants_log = read_entire_file(MESSAGE_VARIANTS_LOG)
+    message_variants = message_variants_log.split('\n')
+    # Last string in log is empty.
+    message_variants = message_variants[:len(message_variants) - 1]
+    print("read message variants==>" + str(len(message_variants)))
+    return message_variants
+
+
+def build_possible_letters_substitution_dictionaries(cryptogram, message_variants):
+    possible_letters_substitutions = []
+    for message_variant in message_variants:
+        message_variant = message_variant[
+                          message_variant.index(')') + 1: len(message_variant) - 1]
+        letters_substitution_dict = {}
+        for i in range(len(message_variant)):
+            initial_letter = cryptogram[i]
+            alternative_letter = message_variant[i]
+
+            letters_substitution_dict[initial_letter] = alternative_letter
+        possible_letters_substitutions.append(letters_substitution_dict)
+    return possible_letters_substitutions
+# endregion interactive improvement
+
+
+def main(cryptogram):
+    build_and_save_variants(cryptogram)
+    run_interactive_improvement(cryptogram)
+
+
+# main(ENCRYPTED_TEXT)
+build_and_save_variants(ENCRYPTED_TEXT)
