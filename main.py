@@ -322,15 +322,19 @@ def build_alphabet_variants(words_variants):
     first_tuple = sorted_words_variants[0]
     first_word = first_tuple[0]
     first_word_variants = first_tuple[1]
-    branches = build_choices_for_merging(first_word, first_word_variants)
+    branches = build_one_word_branches(first_word, first_word_variants)
 
     for i in range(1, len(sorted_words_variants)):
         cur_tuple = sorted_words_variants[i]
         cur_word = cur_tuple[0]
         cur_word_variants = cur_tuple[1]
 
-        new_choices = build_choices_for_merging(cur_word, cur_word_variants)
-        branches = merge_branches_with_new_choices(branches, new_choices)
+        new_word_branches = build_one_word_branches(cur_word, cur_word_variants)
+        if len(new_word_branches) == 0:
+            continue
+        result_branches = update_branches_lists(branches, new_word_branches)
+        if len(result_branches) > 0:
+            branches = result_branches
 
     # each branch is a key-alphabet candidate!
     return branches
@@ -340,46 +344,55 @@ def my_compare_func(a):
     return len(a[1])
 
 
-def build_choices_for_merging(word, word_variants):
-    choices = []
-    for variant_word in word_variants:
+def build_one_word_branches(word, word_variants):
+    branches = []
+    for word_variant in word_variants:
         branch = {}
         for i in range(0, len(word)):
             key = word[i]
-            value = variant_word[i]
+            value = word_variant[i]
             branch[key] = value
-        choices.append(branch)
-    return choices
+        branches.append(branch)
+    return branches
 
 
-def merge_branches_with_new_choices(branches, new_choices):
+def update_branches_lists(branches, new_branches):
     # each branch and each choice is a letter-to-letter dictionary
-    result_branches = []
     print('merge_branches_with_new_choices().branches==>' + str(len(branches)) +
-          ' new_choices==>' + str(len(new_choices)))
+          ' new_choices==>' + str(len(new_branches)))
 
+    if len(branches) == 0:
+        return new_branches
+    elif len(new_branches) == 0:
+        return branches
+    else:
+        return merge_branches_lists(branches, new_branches)
+
+
+def merge_branches_lists(branches, new_branches):
+    result_branches = []
     for cur_branch in branches:
-        for cur_choice in new_choices:
-            merged_branch = merge_branches(cur_branch, cur_choice)
+        for cur_new_branch in new_branches:
+            merged_branch = merge_two_branches(cur_branch, cur_new_branch)
             if merged_branch is not None:
                 result_branches.append(merged_branch)
 
-    if len(result_branches) == 0:
-        result_branches = branches
-    print('merge_branches_with_new_choices().result_branches==>' + str(len(result_branches)))
+    print('intersect_branches().result_branches==>' + str(len(result_branches)))
     return result_branches
 
 
-def merge_branches(branch_1, branch_2):
+def merge_two_branches(branch_1, branch_2):
     for entrance in branch_1:
         value_1 = branch_1[entrance]
         try:
             value_2 = branch_2[entrance]
             if value_1 != value_2:
+                # Branches conflict with each other.
                 return None
         except KeyError:
             continue
 
+    # Branches are not contrary to one another.
     result_branch = branch_1.copy()
     result_branch.update(branch_2)
     return result_branch
