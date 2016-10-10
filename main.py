@@ -30,12 +30,20 @@ PUNCTUATION_MARKS = [',', '.', '-', '?', '!', ':', ';']
 ALPHABET = RUSSIAN_ALPHABET
 ALPHABET_LEN = len(ALPHABET)
 MAX_REAL_PROBABILITY = max(RUSSIAN_REAL_PROBABILITIES.values())
-LENGTH_WORDS_NUMBER_TUPLES = [(4, 15), (5, 20), (6, 5)]
+# LENGTH_WORDS_NUMBER_TUPLES = [(4, 10), (5, 5), (6, 4), (7, 3)]
+LENGTH_WORDS_NUMBER_TUPLES = [(7, 2), (6, 4), (5, 4)]
+
 
 # ENCRYPTED_TEXT = "пкцхкдогта,-тгфоь-л,!вктоы-шкяо-шз-ы,ёш:о-шоё пштк,,-доцаб-ш!огщот кпш-ош-х-офш-бо-шсцатгш:пнщос-о-б!ь,-тк,гещолаохца,гуёщосцгкыаяотоь-,уко анотозкцкт,еоьобцашёъос-окх-оёбкюзк,гн щопа анояёфваноюгл,:об!яаозкцктк,пьанъо-,осцгкыаяошкскц:о,апяаюзаш:пно;ш-еоюгл,геоьобцашёъоь-,пша,шг,ояктг,об!яо-фк,:оцазщошк об-яккофш-о-,о,коюзаяоёюкото;ш-оякш-обцашао,гь-яанъо,-що,кп -шцно,аопт-еояеб-т:огоётаюк,гкоьопкцхкеогта,-тгфёщоь-,пша,шг,ёояктг,ёоб!я-отозкцкт,ко,кя-ть-опобцаш- ъок ёо,кя-ть-щозаюко,ксцгнш,-об!я-отгзкш:о-ш,-вк,гкобцашаоьозкцкт,къозяноь-,пша,шг,аояктг,аозкцкт,ноб!яао кпш-оюгл,гщош-окпш:оцаз-пшкдщопшцаза,гдщошцёзаиозянопкцхкногта,-тгфаозкцкт,ноб!яащопо-з,-допш-ц-,!що-шз!ыо-шошцёзащопозцёх-до–ос-якл,-косц-шгт-нзгкогпс-цфк,,-пшгщоь-ш-ц-ко-,осцг,г аяопоёз-т-я:пштгк огоп-л,а,гк окх-ос-я:л!ъозяноь-,пша,шг,аояктг,аозкцкт,ноб!яаошк оы-ц-ващофш-о-,аосцкзпшатяняаос-сцг.козяношцёзао,кп- ,к,,-ос-якл,-х-иозянопкцхкногта,-тгфаозкцкт,ноб!яао-п-бк,,-оы-ц-ваошк щофш-оша о -ю,-огоз-яю,-о,гфкх-о,козкяаш:ъоьц- кош-х-щого-ш,-вк,гкопкцхкногта,-тгфаоьо,ац-зёо,кпь-я:ь-оь-ц-бгя-оь-,пша,шг,аъопкцхкдогта,-тгфох-т-цгящофш-о-,ояебгшогол,акшо,ац-зщогофапш-обкпкз-таяопо ёюгьа гщофш-о-,оё кяозкяаш:оы-ц-в-що,косцгшт-цннп:ого,коя- анп:щогоглоьаюз-дошаь-добкпкз!от!т-згяо-б.гкоза,,!котос-я:лёо,ац-заоготоз-ьалашкя:пшт-щофш-ол,аяо;ш-шо,ац-зъошаь-ко-ш,-вк,гкоьо,ац-зёо,ко,цатгя-п:оь-,пша,шг,ёояктг,ёъозяноь-,пша,шг,ао,ац-зоб!яош-я:ь-охяат,!доёфапш,гьото-б.к ошцёзкщогщо,кп -шцно,аотпкоётаюк,гкогоьаьёерш-оьц-т,ёеояеб-т:оьо ёюгьёщотп-па,,ёеог щоьаьо-,опа ох-т-цгящоткц-нш,-щопо -я-ь- обаб!рь-ц гягу!що-,щоьаьоёфапш,гьопо,г ото-б.к озкякщог,-хзаосцгы-згтвгдотот-пыг.к,:ко-шопгя!щоьц-ш-пшгщопсцаткзягт-пшго;шгыояезкдщо-фк,:офапш-щоь-хзаото-б.к озкякошцкб-таягп:озцёхгкоьафкпштащосцгы-згяото-ля-бяк,гко,ао,ац-золаокх-обкпскф,-пш:що,кцнвягт-пш:щос:н,пшт-щоя-ю:ъоь-,пша,шг,ояктг,щокпягобоёо,кх-опсц-пгягщояебгшояго-,о,ац-зщоцквгшкя:,-о,кол,аяоб!щоьаьо,ао;ш-о-шткшгш:ъо-,ояебгяого,кояебгяо,ац-зошаьоюкщоьаьогот--б.кояезкдъоцалё ккшпнщоьаьоз-бц!дофкя-ткьщо-,об-я:вкояебгящофк о,кояебгяояезкдщоаос-ш- ёого,ац-зъо,-ояебгш:огяго,кояебгш:о,ац-зщоьаьофш-рш-о-п-бк,,-кщо-,о,ко -хщос-ш- ёофш-о,кош-я:ь-оюгяопо,ац-з- що,кош-я:ь-отпкокх-ог,шкцкп!об!ягоптнла,!опо,ац-з- що,-о-,опфгшаяогопа -х-опкбнофапш:ео,ац-защо,котгзкяотопкбкого,ац-зко,гьаьгыо"
 # ENCRYPTED_TEXT = "ощлж9шсркс7ркгмь7п- 79килцё-79ш78ц-ё-5эь79шплч лж9л7пч15эь7к95шмшо9зс7г-и57л7йшч-мш77йшч-мэ79-3-щ7л3ш9э7азо5мл7щзош5эь79л7к95шмшо9зс7г-и57ч-ищ.3-ш5о17п75л ь735л7г- кщк17йшч-мэ7бшмшплёк5о17и-и7плщло-5зсь7к7я5л79ш78ёкпк5шщэ9ль75-и7и-и7шцл7бмшёикь7п7л5щк3кш7л57о- лцл7к бшм-5лм-ь7ощ-пкщкоэ7л5щк39лс7плщло-5ло5э.х"
 # ENCRYPTED_TEXT = ".!?йэчщфчэ!?чщ?вщйв-вё!?чэ?гы?ч-йэиа?чщ?павх-спмщёщ? ёэё?фъпёэг?ёщйвё!?в-ъ?вээбцщч-щ?;?.?мгщпщч?;?ч-йэина?чщ?бмнщё?павх-спэгачэе"
 ENCRYPTED_TEXT = "Бтсвбр ел ибвн анжмс, Гвлъ ел бтсвбрн тсбмс Т залсбгалрыим цнвкрлим, Т снвнилим ъл тлълим; Наь влтснс пнвнъ ърбвцби, Л пбъ енй хвутслаьеый ъби; Онакл сли жмрнс вучелд, Ъл злснйемцл клклд! Онакл пнтнекм пбнс Ъл бвншкм ртн гвызнс, Л бвншкм ен пвбтсын, Ртн ткбваупкм збабсын"
+
+
+def count_percentage_half_window(occurrence_percentage):
+    return ((occurrence_percentage * 100) ** (1/2)) / 100
+    # More wide variant
+    # return ((occurrence_percentage * 100) ** (1/2) + 1) / 100
 
 
 def encrypt(message, new_alphabet):
@@ -81,7 +89,7 @@ def build_and_save_variants(cryptogram):
     cryptogram = fix_cryptogram_spaces_and_punctuation(cryptogram, statistical_letter_occurrences)
     statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
     letter_substitution_variants =\
-        build_letters_substitution_variants(statistical_letter_occurrences)
+        build_letters_substitution_variants_on_percents(statistical_letter_occurrences)
 
     words_variants = build_words_variants(cryptogram, letter_substitution_variants,
                                           LENGTH_WORDS_NUMBER_TUPLES)
@@ -113,10 +121,9 @@ def build_words_variants(cryptogram, letter_substitution_variants, length_words_
 
 def build_words_variants_particular_length(cryptogram, letter_substitution_variants,
                                            letters_in_word, words_to_return):
-    print("build_words_variants_particular_length().letters_in_word==>" + str(letters_in_word) +
+    print("\nbuild_words_variants_particular_length().letters_in_word==>" + str(letters_in_word) +
           " words_to_return==>" + str(words_to_return))
     all_unreal_words = obtain_words_by_length(cryptogram, letters_in_word)
-    print("build_words_variants_particular_length().all_unreal_words==>" + str(len(all_unreal_words)))
     # too many
     unreal_words = all_unreal_words[:words_to_return]
     real_words = load_real_words_by_length(letters_in_word)
@@ -160,20 +167,30 @@ def substitute_with_spaces(message, letter_to_substitute):
     return result_text
 
 
-def build_letters_substitution_variants(letters_probabilities):
+# TODO Refactor me.
+def build_letters_substitution_variants_on_percents(letters_occurrences):
     real_probabilities = RUSSIAN_REAL_PROBABILITIES
 
     letter_variants_list = []
-    for cur_tuple in letters_probabilities:
+    total_substituions = 0
+    for cur_tuple in letters_occurrences:
         cur_letter = cur_tuple[0]
-        cur_probability = cur_tuple[1]
+        cur_letter_occurrence = cur_tuple[1]
 
-        percentage_window = ((cur_probability * 100) ** (1/2)) / 100
-        min_probability = max(0, cur_probability - percentage_window)
-        max_probability = min(cur_probability + percentage_window, MAX_REAL_PROBABILITY)
+        percentage_window = count_percentage_half_window(cur_letter_occurrence)
+        min_probability = max(0, cur_letter_occurrence - percentage_window)
+        max_probability = min(cur_letter_occurrence + percentage_window, MAX_REAL_PROBABILITY)
         available_letters = [letter for letter in real_probabilities
                              if min_probability <= real_probabilities[letter] <= max_probability]
+        total_substituions += len(available_letters)
+
+        print('build_letters_substitution_variants()')
+        print(cur_letter + '==>' + str(available_letters))
+        print(str(len(available_letters)))
         letter_variants_list.append((cur_letter, available_letters))
+
+    average_substitutions_for_a_letter = total_substituions // len(letter_variants_list)
+    print('average_substitutions_for_a_letter==>' + str(average_substitutions_for_a_letter))
     return dict(letter_variants_list)
 
 
@@ -190,7 +207,15 @@ def obtain_words_by_length(cryptogram, words_len):
         if cur_word_len == words_len:
             result_words.append(cur_word)
 
-    return list(set(result_words))
+    return filter_duplicate_entries(result_words)
+
+
+def filter_duplicate_entries(word_list):
+    result_list = []
+    for word in word_list:
+        if word not in result_list:
+            result_list.append(word)
+    return result_list
 
 
 # TODO Refactor me.
