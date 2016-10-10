@@ -26,6 +26,8 @@ ALPHABET_VARIANTS_LOG_FILE_NAME = 'alphabet_variants.log'
 MESSAGE_VARIANTS_LOG = 'message_variants.log'
 
 SPACE = ' '
+EMPTY_LETTER = '_'
+DECRYPTED_CONGRATULATION_MESSAGE = 'DECRYPTED =)'
 PUNCTUATION_MARKS = [',', '.', '-', '?', '!', ':', ';']
 ALPHABET = RUSSIAN_ALPHABET
 ALPHABET_LEN = len(ALPHABET)
@@ -486,10 +488,12 @@ def print_hacked_alternatives(cryptogram, alphabet_variants):
                     real_letter = alphabet_variant[unreal_letter]
                     hacked_text += real_letter
                 except KeyError:
-                    hacked_text += "_"
+                    hacked_text += EMPTY_LETTER
             else:
                 hacked_text += SPACE
-        print('(' + str(counter) + '/' + str(alphabet_variants_len) + ')' + hacked_text)
+        print('(' + str(counter + 1) + '/' + str(alphabet_variants_len) + ')' + hacked_text)
+        if EMPTY_LETTER not in hacked_text:
+            print(DECRYPTED_CONGRATULATION_MESSAGE)
         counter += 1
 # endregion BUILD AND SAVE VARIANTS
 
@@ -557,7 +561,7 @@ def filter_user_substitution_variants(letters_substitution_variants,
             letters_substitution_variant[cryptogram_letter] = user_letter
             for letter, substitution_letter in letters_substitution_variant.items():
                 if substitution_letter == user_letter and letter != cryptogram_letter:
-                    letters_substitution_variant[letter] = '_'
+                    letters_substitution_variant[letter] = EMPTY_LETTER
     else:
         # Not all the variants were filtered.
         return new_letters_substitution_variants
