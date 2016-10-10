@@ -30,9 +30,9 @@ PUNCTUATION_MARKS = [',', '.', '-', '?', '!', ':', ';']
 ALPHABET = RUSSIAN_ALPHABET
 ALPHABET_LEN = len(ALPHABET)
 MAX_REAL_PROBABILITY = max(RUSSIAN_REAL_OCCURRENCES.values())
-# LENGTH_WORDS_NUMBER_TUPLES = [(4, 10), (5, 5), (6, 4), (7, 3)]
-LENGTH_WORDS_NUMBER_TUPLES = [(4, 5), (5, 4), (6, 4)]
-FRAME_HALF = 3
+# LENGTH_WORDS_NUMBER_TUPLES = [(4, 10), (5, 10), (6, 3)]
+LENGTH_WORDS_NUMBER_TUPLES = [(5, 10), (6, 5)]
+FRAME_HALF = 4
 
 
 # ENCRYPTED_TEXT = "пкцхкдогта,-тгфоь-л,!вктоы-шкяо-шз-ы,ёш:о-шоё пштк,,-доцаб-ш!огщот кпш-ош-х-офш-бо-шсцатгш:пнщос-о-б!ь,-тк,гещолаохца,гуёщосцгкыаяотоь-,уко анотозкцкт,еоьобцашёъос-окх-оёбкюзк,гн щопа анояёфваноюгл,:об!яаозкцктк,пьанъо-,осцгкыаяошкскц:о,апяаюзаш:пно;ш-еоюгл,геоьобцашёъоь-,пша,шг,ояктг,об!яо-фк,:оцазщошк об-яккофш-о-,о,коюзаяоёюкото;ш-оякш-обцашао,гь-яанъо,-що,кп -шцно,аопт-еояеб-т:огоётаюк,гкоьопкцхкеогта,-тгфёщоь-,пша,шг,ёояктг,ёоб!я-отозкцкт,ко,кя-ть-опобцаш- ъок ёо,кя-ть-щозаюко,ксцгнш,-об!я-отгзкш:о-ш,-вк,гкобцашаоьозкцкт,къозяноь-,пша,шг,аояктг,аозкцкт,ноб!яао кпш-оюгл,гщош-окпш:оцаз-пшкдщопшцаза,гдщошцёзаиозянопкцхкногта,-тгфаозкцкт,ноб!яащопо-з,-допш-ц-,!що-шз!ыо-шошцёзащопозцёх-до–ос-якл,-косц-шгт-нзгкогпс-цфк,,-пшгщоь-ш-ц-ко-,осцг,г аяопоёз-т-я:пштгк огоп-л,а,гк окх-ос-я:л!ъозяноь-,пша,шг,аояктг,аозкцкт,ноб!яаошк оы-ц-ващофш-о-,аосцкзпшатяняаос-сцг.козяношцёзао,кп- ,к,,-ос-якл,-х-иозянопкцхкногта,-тгфаозкцкт,ноб!яао-п-бк,,-оы-ц-ваошк щофш-оша о -ю,-огоз-яю,-о,гфкх-о,козкяаш:ъоьц- кош-х-щого-ш,-вк,гкопкцхкногта,-тгфаоьо,ац-зёо,кпь-я:ь-оь-ц-бгя-оь-,пша,шг,аъопкцхкдогта,-тгфох-т-цгящофш-о-,ояебгшогол,акшо,ац-зщогофапш-обкпкз-таяопо ёюгьа гщофш-о-,оё кяозкяаш:оы-ц-в-що,косцгшт-цннп:ого,коя- анп:щогоглоьаюз-дошаь-добкпкз!от!т-згяо-б.гкоза,,!котос-я:лёо,ац-заоготоз-ьалашкя:пшт-щофш-ол,аяо;ш-шо,ац-зъошаь-ко-ш,-вк,гкоьо,ац-зёо,ко,цатгя-п:оь-,пша,шг,ёояктг,ёъозяноь-,пша,шг,ао,ац-зоб!яош-я:ь-охяат,!доёфапш,гьото-б.к ошцёзкщогщо,кп -шцно,аотпкоётаюк,гкогоьаьёерш-оьц-т,ёеояеб-т:оьо ёюгьёщотп-па,,ёеог щоьаьо-,опа ох-т-цгящоткц-нш,-щопо -я-ь- обаб!рь-ц гягу!що-,щоьаьоёфапш,гьопо,г ото-б.к озкякщог,-хзаосцгы-згтвгдотот-пыг.к,:ко-шопгя!щоьц-ш-пшгщопсцаткзягт-пшго;шгыояезкдщо-фк,:офапш-щоь-хзаото-б.к озкякошцкб-таягп:озцёхгкоьафкпштащосцгы-згяото-ля-бяк,гко,ао,ац-золаокх-обкпскф,-пш:що,кцнвягт-пш:щос:н,пшт-щоя-ю:ъоь-,пша,шг,ояктг,щокпягобоёо,кх-опсц-пгягщояебгшояго-,о,ац-зщоцквгшкя:,-о,кол,аяоб!щоьаьо,ао;ш-о-шткшгш:ъо-,ояебгяого,кояебгяо,ац-зошаьоюкщоьаьогот--б.кояезкдъоцалё ккшпнщоьаьоз-бц!дофкя-ткьщо-,об-я:вкояебгящофк о,кояебгяояезкдщоаос-ш- ёого,ац-зъо,-ояебгш:огяго,кояебгш:о,ац-зщоьаьофш-рш-о-п-бк,,-кщо-,о,ко -хщос-ш- ёофш-о,кош-я:ь-оюгяопо,ац-з- що,кош-я:ь-отпкокх-ог,шкцкп!об!ягоптнла,!опо,ац-з- що,-о-,опфгшаяогопа -х-опкбнофапш:ео,ац-защо,котгзкяотопкбкого,ац-зко,гьаьгыо"
@@ -90,8 +90,8 @@ def build_and_save_variants(cryptogram):
     cryptogram = fix_cryptogram_spaces_and_punctuation(cryptogram, statistical_letter_occurrences)
     statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram.replace(' ', ''))
     letter_substitution_variants = \
-        build_letters_substitution_variants_on_percents(statistical_letter_occurrences)
-        # build_letters_substitution_variants_on_rating(statistical_letter_occurrences)
+        build_letters_substitution_variants_on_rating(statistical_letter_occurrences)
+        # build_letters_substitution_variants_on_percents(statistical_letter_occurrences)
 
     words_variants = build_words_variants(cryptogram, letter_substitution_variants,
                                           LENGTH_WORDS_NUMBER_TUPLES)
@@ -191,7 +191,7 @@ def build_letters_substitution_variants_on_percents(letters_occurrences):
         print(str(len(available_letters)))
         letter_variants_list.append((cur_letter, available_letters))
 
-    average_substitutions_for_a_letter = total_substitutions // len(letter_variants_list)
+    average_substitutions_for_a_letter = total_substitutions / len(letter_variants_list)
     print('average_substitutions_for_a_letter==>' + str(average_substitutions_for_a_letter))
     return dict(letter_variants_list)
 
@@ -350,7 +350,7 @@ def build_words_substitution_variants(all_unreal_words, dictionary_words, letter
         word_variants = (unreal_word, all_possible_matching_real_words)
         words_variants.append(word_variants)
         # log
-        print('unreal word #' + str(words_variants_counter) + '/' + str(len(all_unreal_words)) + ':')
+        print('unreal word #' + str(words_variants_counter + 1) + '/' + str(len(all_unreal_words)) + ':')
         print(word_variants)
         print('real variants==>' + str(len(word_variants[1])))
         words_variants_counter += 1
@@ -497,8 +497,9 @@ def print_hacked_alternatives(cryptogram, alphabet_variants):
 # region interactive improvement
 def run_interactive_improvement(cryptogram):
     cryptogram = cryptogram.lower()
-    statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram.replace(' ', ''))
+    statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram)
     cryptogram = fix_cryptogram_spaces_and_punctuation(cryptogram, statistical_letter_occurrences)
+    statistical_letter_occurrences = build_letter_occurrence_statistics(cryptogram.replace(' ', ''))
     print("cryptogram length==>" + str(len(cryptogram)))
 
     message_variants = read_message_variants_from_log_file()
@@ -511,24 +512,38 @@ def run_interactive_improvement(cryptogram):
 
 
 def do_interactive_improvement_iteration(cryptogram, letters_substitution_variants):
-    position, user_letter = read_user_position_and_letter()
-    cryptogram_letter = cryptogram[position]
+    position, new_value = read_user_position_and_letter()
 
-    new_letters_substitution_variants = substitute_initial_letter_with_user_letter(
-        letters_substitution_variants, cryptogram_letter, user_letter)
-
-    if len(new_letters_substitution_variants) == 0:
-        for letters_substitution_variant in letters_substitution_variants:
-            letters_substitution_variant[cryptogram_letter] = user_letter
+    if len(new_value) == 1:
+        # Substituting a letter
+        cryptogram_letter = cryptogram[position]
+        letters_substitution_variants = filter_user_substitution_variants(
+            letters_substitution_variants, cryptogram_letter, new_value)
     else:
-        letters_substitution_variants = new_letters_substitution_variants
+        # Substituting a word
+        cryptogram_word = cryptogram.split(' ')[position]
+        letters_substitution_variants = substitute_initial_word_with_user_word(
+            letters_substitution_variants, cryptogram_word, new_value)
 
     print_hacked_alternatives(cryptogram, letters_substitution_variants)
 
 
-def substitute_initial_letter_with_user_letter(letters_substitution_variants,
-                                               cryptogram_letter,
-                                               user_letter):
+def substitute_initial_word_with_user_word(letters_substitution_variants,
+                                           cryptogram_word, user_word):
+    if len(cryptogram_word) != len(user_word):
+        return letters_substitution_variants
+    else:
+        for i in range(len(cryptogram_word)):
+            letters_substitution_variants = filter_user_substitution_variants(
+                letters_substitution_variants, cryptogram_word[i], user_word[i]
+            )
+        return letters_substitution_variants
+
+
+# TODO Refactor me.
+def filter_user_substitution_variants(letters_substitution_variants,
+                                      cryptogram_letter,
+                                      user_letter):
     new_letters_substitution_variants = []
     for letters_substitution_variant in letters_substitution_variants:
         try:
@@ -536,7 +551,18 @@ def substitute_initial_letter_with_user_letter(letters_substitution_variants,
                 new_letters_substitution_variants.append(letters_substitution_variant)
         except KeyError:
             pass
-    return new_letters_substitution_variants
+
+    if len(new_letters_substitution_variants) == 0:
+        for letters_substitution_variant in letters_substitution_variants:
+            letters_substitution_variant[cryptogram_letter] = user_letter
+            for letter, substitution_letter in letters_substitution_variant.items():
+                if substitution_letter == user_letter and letter != cryptogram_letter:
+                    letters_substitution_variant[letter] = '_'
+    else:
+        # Not all the variants were filtered.
+        return new_letters_substitution_variants
+
+    return letters_substitution_variants
 
 
 def read_user_position_and_letter():
@@ -579,5 +605,5 @@ def main(cryptogram):
 
 # main(ENCRYPTED_TEXT)
 
-build_and_save_variants(ENCRYPTED_TEXT)
-# run_interactive_improvement(ENCRYPTED_TEXT)
+# build_and_save_variants(ENCRYPTED_TEXT)
+run_interactive_improvement(ENCRYPTED_TEXT)
